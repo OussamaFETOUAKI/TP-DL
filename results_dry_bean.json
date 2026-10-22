@@ -1,0 +1,275 @@
+{
+    "dimensions_raw": [
+        13611,
+        16
+    ],
+    "duplicates_count": 68,
+    "classes_distribution": [
+        {
+            "Variété": "BARBUNYA",
+            "Effectif": 1322,
+            "Pourcentage (%)": 9.76
+        },
+        {
+            "Variété": "BOMBAY",
+            "Effectif": 522,
+            "Pourcentage (%)": 3.85
+        },
+        {
+            "Variété": "CALI",
+            "Effectif": 1630,
+            "Pourcentage (%)": 12.04
+        },
+        {
+            "Variété": "DERMASON",
+            "Effectif": 3546,
+            "Pourcentage (%)": 26.18
+        },
+        {
+            "Variété": "HOROZ",
+            "Effectif": 1860,
+            "Pourcentage (%)": 13.73
+        },
+        {
+            "Variété": "SEKER",
+            "Effectif": 2027,
+            "Pourcentage (%)": 14.97
+        },
+        {
+            "Variété": "SIRA",
+            "Effectif": 2636,
+            "Pourcentage (%)": 19.46
+        }
+    ],
+    "splits": {
+        "train": 8125,
+        "val": 2709,
+        "test": 2709
+    },
+    "baseline_summary": {
+        "Modèle": "Baseline (64-32)",
+        "Paramètres": 3399,
+        "Époques": 40,
+        "CE_Validation": 0.177842378616333,
+        "Accuracy_Val": 0.94093761535622,
+        "F1_Macro_Val": 0.9516184076733634
+    },
+    "lr_table": [
+        {
+            "Modèle": "Adam (lr=0.0001)",
+            "Paramètres": 3399,
+            "Époques": 30,
+            "CE_Validation": 0.1840876191854477,
+            "Accuracy_Val": 0.9390919158361019,
+            "F1_Macro_Val": 0.9487283700916812
+        },
+        {
+            "Modèle": "Adam (lr=0.001)",
+            "Paramètres": 3399,
+            "Époques": 30,
+            "CE_Validation": 0.17716920375823975,
+            "Accuracy_Val": 0.9398301956441492,
+            "F1_Macro_Val": 0.9505721719167683
+        },
+        {
+            "Modèle": "Adam (lr=0.05)",
+            "Paramètres": 3399,
+            "Époques": 30,
+            "CE_Validation": 0.28576648235321045,
+            "Accuracy_Val": 0.9110372831303064,
+            "F1_Macro_Val": 0.9258024126132609
+        }
+    ],
+    "opt_table": [
+        {
+            "Modèle": "Optimiseur ADAM",
+            "Paramètres": 3399,
+            "Époques": 30,
+            "CE_Validation": 0.17716920375823975,
+            "Accuracy_Val": 0.9398301956441492,
+            "F1_Macro_Val": 0.9505721719167683
+        },
+        {
+            "Modèle": "Optimiseur SGD",
+            "Paramètres": 3399,
+            "Époques": 30,
+            "CE_Validation": 0.37460437417030334,
+            "Accuracy_Val": 0.9114064230343301,
+            "F1_Macro_Val": 0.9222819543373669
+        }
+    ],
+    "batch_table": [
+        {
+            "Modèle": "SGD (batch=16)",
+            "Paramètres": 3399,
+            "Époques": 10,
+            "CE_Validation": 0.18451125919818878,
+            "Accuracy_Val": 0.94093761535622,
+            "F1_Macro_Val": 0.9493105962087581,
+            "Mises_à_jour_par_époque": 508
+        },
+        {
+            "Modèle": "SGD (batch=64)",
+            "Paramètres": 3399,
+            "Époques": 10,
+            "CE_Validation": 0.2661939263343811,
+            "Accuracy_Val": 0.9250645994832042,
+            "F1_Macro_Val": 0.9356096157740358,
+            "Mises_à_jour_par_époque": 127
+        },
+        {
+            "Modèle": "SGD (batch=Full Train)",
+            "Paramètres": 3399,
+            "Époques": 10,
+            "CE_Validation": 1.94306218624115,
+            "Accuracy_Val": 0.22702104097452935,
+            "F1_Macro_Val": 0.11945665432961852,
+            "Mises_à_jour_par_époque": 1
+        }
+    ],
+    "arch_table": [
+        {
+            "Modèle": "Étroit (8)",
+            "Paramètres": 199,
+            "Époques": 30,
+            "CE_Validation": 0.18808488547801971,
+            "Accuracy_Val": 0.937984496124031,
+            "F1_Macro_Val": 0.946627473652493
+        },
+        {
+            "Modèle": "Référence (32)",
+            "Paramètres": 775,
+            "Époques": 30,
+            "CE_Validation": 0.17383438348770142,
+            "Accuracy_Val": 0.9416758951642673,
+            "F1_Macro_Val": 0.9504375365184458
+        },
+        {
+            "Modèle": "Deux couches (64, 32)",
+            "Paramètres": 3399,
+            "Époques": 30,
+            "CE_Validation": 0.17716920375823975,
+            "Accuracy_Val": 0.9398301956441492,
+            "F1_Macro_Val": 0.9505721719167683
+        },
+        {
+            "Modèle": "Trois couches (128, 64, 32)",
+            "Paramètres": 12743,
+            "Époques": 30,
+            "CE_Validation": 0.18785710632801056,
+            "Accuracy_Val": 0.937984496124031,
+            "F1_Macro_Val": 0.9484105356194921
+        },
+        {
+            "Modèle": "Activation Tanh (64, 32)",
+            "Paramètres": 3399,
+            "Époques": 30,
+            "CE_Validation": 0.17106850445270538,
+            "Accuracy_Val": 0.9435215946843853,
+            "F1_Macro_Val": 0.9527913582872433
+        }
+    ],
+    "reg_table": [
+        {
+            "Modèle": "Référence (Sans régul)",
+            "Paramètres": 3399,
+            "Époques": 35,
+            "CE_Validation": 0.17679175734519958,
+            "Accuracy_Val": 0.94093761535622,
+            "F1_Macro_Val": 0.9513206719439041,
+            "Perte_Evaluate_Pénalisée": 0.17679160833358765
+        },
+        {
+            "Modèle": "L1 (1e-4)",
+            "Paramètres": 3399,
+            "Époques": 35,
+            "CE_Validation": 0.1739288568496704,
+            "Accuracy_Val": 0.9416758951642673,
+            "F1_Macro_Val": 0.9521794492321943,
+            "Perte_Evaluate_Pénalisée": 0.20565946400165558
+        },
+        {
+            "Modèle": "L2 (1e-3)",
+            "Paramètres": 3399,
+            "Époques": 35,
+            "CE_Validation": 0.1741865873336792,
+            "Accuracy_Val": 0.9413067552602437,
+            "F1_Macro_Val": 0.9513893737373021,
+            "Perte_Evaluate_Pénalisée": 0.2044258415699005
+        },
+        {
+            "Modèle": "Dropout (0.25)",
+            "Paramètres": 3399,
+            "Époques": 35,
+            "CE_Validation": 0.17974814772605896,
+            "Accuracy_Val": 0.94093761535622,
+            "F1_Macro_Val": 0.9516429746149011,
+            "Perte_Evaluate_Pénalisée": 0.17974792420864105
+        },
+        {
+            "Modèle": "BatchNorm",
+            "Paramètres": 3783,
+            "Époques": 35,
+            "CE_Validation": 0.20026251673698425,
+            "Accuracy_Val": 0.9272794389073459,
+            "F1_Macro_Val": 0.938257944711447,
+            "Perte_Evaluate_Pénalisée": 0.20026250183582306
+        }
+    ],
+    "early_stopping": {
+        "stopped_epoch": 32,
+        "best_epoch": 24
+    },
+    "test_results": {
+        "loss": 0.21495632827281952,
+        "accuracy": 0.9217423403469915,
+        "f1_macro": 0.93124545531604,
+        "dummy_accuracy": 0.2617201919527501,
+        "dummy_f1_macro": 0.05926607038368303
+    },
+    "classification_report_test": "              precision    recall  f1-score   support\n\n    BARBUNYA     0.9252    0.8868    0.9056       265\n      BOMBAY     1.0000    1.0000    1.0000       104\n        CALI     0.8814    0.9571    0.9176       326\n    DERMASON     0.9038    0.9408    0.9219       709\n       HOROZ     0.9718    0.9247    0.9477       372\n       SEKER     0.9465    0.9581    0.9523       406\n        SIRA     0.9028    0.8463    0.8737       527\n\n    accuracy                         0.9217      2709\n   macro avg     0.9331    0.9305    0.9312      2709\nweighted avg     0.9224    0.9217    0.9215      2709\n",
+    "misclassified_samples": [
+        {
+            "Index_Test": 48,
+            "Variété_Réelle": "SEKER",
+            "Variété_Prédite": "SIRA",
+            "Confiance_Prédite": "98.47%",
+            "Confiance_Vraie_Classe": "0.65%"
+        },
+        {
+            "Index_Test": 51,
+            "Variété_Réelle": "SEKER",
+            "Variété_Prédite": "BARBUNYA",
+            "Confiance_Prédite": "64.03%",
+            "Confiance_Vraie_Classe": "4.69%"
+        },
+        {
+            "Index_Test": 54,
+            "Variété_Réelle": "DERMASON",
+            "Variété_Prédite": "SIRA",
+            "Confiance_Prédite": "94.21%",
+            "Confiance_Vraie_Classe": "5.32%"
+        },
+        {
+            "Index_Test": 55,
+            "Variété_Réelle": "HOROZ",
+            "Variété_Prédite": "CALI",
+            "Confiance_Prédite": "36.04%",
+            "Confiance_Vraie_Classe": "31.07%"
+        },
+        {
+            "Index_Test": 66,
+            "Variété_Réelle": "BARBUNYA",
+            "Variété_Prédite": "CALI",
+            "Confiance_Prédite": "97.83%",
+            "Confiance_Vraie_Classe": "2.07%"
+        },
+        {
+            "Index_Test": 70,
+            "Variété_Réelle": "SIRA",
+            "Variété_Prédite": "DERMASON",
+            "Confiance_Prédite": "65.53%",
+            "Confiance_Vraie_Classe": "31.89%"
+        }
+    ]
+}
